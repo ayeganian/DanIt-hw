@@ -1,0 +1,33 @@
+.first-page {
+    width: 1280px;
+    margin: 60px 100px 30px;
+}
+
+.main-name {
+    color: #4bcaff;
+    font-size: 80px;
+    margin-bottom: 45px;
+}
+
+.accent {
+    color: black;
+}
+
+.top-navbar {
+    background-color: #35444f;
+}
+
+.navbar-item {
+
+}
+
+.navbar-item:hover {
+
+}
+
+.image {
+    transition: width 2s, height 2s;
+}
+.navbar-2{
+    background-color: #b4b7ba;
+}
