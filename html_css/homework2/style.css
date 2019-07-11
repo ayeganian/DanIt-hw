@@ -5,6 +5,7 @@
 
 .container {
     margin-bottom: 50px;
+
 }
 
 .main-name {
@@ -87,6 +88,7 @@
     clear: right;
     margin-left: 520px;
     margin-right: 40px;
+    line-height: normal;
 }
 
 .first-paragraph {
