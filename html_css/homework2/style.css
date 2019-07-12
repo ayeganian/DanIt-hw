@@ -1,6 +1,7 @@
 .first-page {
     width: 1280px;
     margin: 0 auto;
+
 }
 
 .container {
@@ -8,11 +9,14 @@
 
 }
 
+.top-main-name {
+    padding-top: 61px;
+}
+
 .main-name {
     display: inline-block;
     color: #4bcaff;
     font-size: 80px;
-    margin-top: 61px;
     margin-bottom: 45px;
 }
 
@@ -41,13 +45,15 @@
 }
 
 .image {
-    float: right;
-    width: 320px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 74px;
     border: 1px solid #b4b7ba;
     padding: 75px 268px 73px 268px;
     overflow: hidden;
     width: 320px;
     height: 381px;
+
 }
 
 .image img {
@@ -64,33 +70,39 @@
 
 .menubar {
     display: inline-block;
+    width: 344px;
+    vertical-align: top;
     border: 1px solid #b4b7ba;
+    box-sizing: border-box;
 }
 
 .menubar-item {
-    display: block;
-    width: 342px;
+
+    display: inline-block;
+    width: 343px;
+    box-sizing: border-box;
     color: #495863;
     font-size: 24px;
-    padding-bottom: 28px;
-    padding-top: 28px;
-    padding-left: 44px;
+    padding: 28px 0 28px 44px;
+    margin-right: 20px;
 }
 
 .menubar-item:hover {
     color: black;
     background-color: #dbdbdb;
-    padding-left: 69px;
+    padding-left: 68px;
+
+
 }
 
 .text-container {
     clear: right;
-    margin-left: 520px;
+    margin-left: 450px;
     margin-right: 40px;
     line-height: normal;
 }
 
-.first-paragraph {
+p {
     margin-bottom: 30px;
 }
 
