@@ -4,7 +4,7 @@
     box-shadow: inset 0px 0px 0 5000px rgba(0,0,0,0.5);
     margin: 0 auto;
     font-family: Verdana, "Trebuchet MS", Geneva, sans-serif;
-    padding-top: 50px;
+    padding-top: 49px;
     padding-bottom: 20px;
 }
 .content-box {
@@ -15,11 +15,11 @@
 
 .container {
 
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 
 }
 .logo{
-    display: inline-block;
+    float: left;
     width: 44px;
     height: 46px;
     background-image: url(img/logo.png);
@@ -29,7 +29,7 @@
     background-image: url(img/logo2.png);
 }
 .logo-text{
-    display: inline-block;
+    float: left;
     margin-left: 15px;
     color: white;
     font-size: 18px;
@@ -42,44 +42,51 @@
 
 }
 b:first-child{
-
     font-size: 29px;
+}
+
+.contact-info{
+
+    color: white;
+    float: right;
+    margin-top: 8px;
 
 }
 
-.contact-email{
-    color: white;
-    float: right;
-
-}
-.contact-tel{
-    color: white;
-    float: right;
-
+.contact-info:nth-of-type(2){
+    clear:right;
+    margin-top: 5px;
 }
 .offer{
     float: left;
     text-align: center;
     margin-bottom: 60px;
-    /*margin-right: 68px;*/
+    margin-right: 68px;
 
 
+}
+.offer:nth-of-type(3n){
+    margin-right: 0;
 }
 .offer-item{
     color: white;
     font-size: 18px;
+
 
     /*display: inline-block;*/
 
 
 
 }
+img{
+    margin-bottom: 22px;
+}
 .offer-item-photo{
     /*float: left;*/
     /*filter: drop-shadow(6px 6px 6px black);*/
     /*border: 1px solid white;*/
 
-    /*margin:49px 34px;*/
+    /*margin-bottom: 22px;*/
 
 }
 .copyright{
@@ -87,7 +94,7 @@ b:first-child{
     color: white;
     text-align: center;
     font-size: 12px;
-    margin-bottom: 20px;
+
 
 }
 .clearfix:after {
