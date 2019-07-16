@@ -1,35 +1,38 @@
-.first-page{
+.first-page {
     width: 1366px;
     background-image: url(img/background.png);
-    box-shadow: inset 0px 0px 0 5000px rgba(0,0,0,0.5);
+    background-size: cover;
+    box-shadow: inset 0px 0px 0 5000px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     font-family: Verdana, "Trebuchet MS", Geneva, sans-serif;
     padding-top: 49px;
     padding-bottom: 20px;
 }
+
 .content-box {
     width: 1066px;
     margin: 0 auto;
-
 }
 
 .container {
-
     margin-bottom: 48px;
-
 }
-.logo{
-    float: left;
+
+.logo {
+    display: inline-block;
     width: 44px;
     height: 46px;
     background-image: url(img/logo.png);
 
 }
-.logo:hover{
+
+.logo:hover {
     background-image: url(img/logo2.png);
 }
-.logo-text{
-    float: left;
+
+.logo-text {
+    display: inline-block;
+    vertical-align: top;
     margin-left: 15px;
     color: white;
     font-size: 18px;
@@ -37,122 +40,131 @@
     text-transform: uppercase;
 
 }
-.logo-text:hover{
-    color: #f26522;
-}
-b:first-child{
+
+.logo-text:first-line {
     font-size: 29px;
 }
 
-.contact-info{
+.logo-text:hover {
+    color: #f26522;
+}
 
+.head:hover .logo {
+    background-image: url(img/logo2.png);
+}
+
+b:first-child {
+    font-size: 29px;
+}
+
+.contact-info {
     color: white;
     float: right;
     margin-top: 8px;
-
 }
 
-.contact-info:nth-of-type(2){
-    clear:right;
+.contact-info:nth-of-type(2) {
+    clear: right;
     margin-top: 5px;
 }
-.offer{
 
+.offer {
     float: left;
     text-align: center;
     margin-bottom: 60px;
-    margin-right: 68px;
+    margin-right: 65px;
     position: relative;
     display: inline-block;
-
 }
 
-.offer:nth-of-type(3n){
+.offer:nth-of-type(3n) {
     margin-right: 0;
 }
-.offer-item{
-    color: white;
-    font-size: 18px;
-}
 
-
-.offer-item:hover {
-    color: #f26522;
-}
-.layer2-details {
-    position: absolute;
-    display: none;
-
-    /*!*bottom: 63px;*!*/
-    /*!*transition: left 500ms linear 0ms;*!*/
-
-    top: 137px;
-    left: 0;
-height: 63px;
-width: 307px;
-background-color: #f26522;
-color: white;
-}
-.offer:hover  .layer2-details {
-  display: block;
-}
-
-.layer2-details-price{
-font-size: 20px;
-position: absolute;
-top: 31px;
-left: 21px;
-bottom: 17px;
-}
-.layer2-details-price:before{
-content: '€';
-
-}
-.layer2-details-price:after{
-content: 'from';
-font-size: 10px;
-position: absolute;
-bottom: 22px;
-left: 0;
-}
-
-.layer2-details-view{
-font-size: 14px;
-position: absolute;
-top: 35px;
-right: 0;
-bottom: 17px;
-left: 126px;
-
-}
-.layer2-details-view:after{
-content: '⟩';
-color: #f9b291;
-font-weight: bold;
-padding-left: 15px;
-}
-img{
-
+.offer-item-photo {
     height: 200px;
     width: 307px;
     margin-bottom: 22px;
 }
-.offer-item-photo{
-    /*float: left;*/
-    /*filter: drop-shadow(6px 6px 6px black);*/
-    /*border: 1px solid white;*/
 
-    /*margin-bottom: 22px;*/
+img {
+    border: 2px solid;
+    border-image: linear-gradient(to top, black, white) 1;
+}
+
+.offer-item {
+    color: white;
+    font-size: 18px;
+}
+
+.offer-item:hover {
+    color: #f26522;
+}
+
+
+.offer-details {
+    position: absolute;
+    opacity: 0;
+    top: 140px;
+    left: 2px;
+    height: 63px;
+    width: 307px;
+    background-color: #f26522;
+    color: white;
+    transition: opacity 2s linear;
+}
+
+.offer:hover .offer-details {
+    opacity: 1;
 
 }
-.copyright{
+
+
+.offer-details-price {
+    font-size: 20px;
+    position: absolute;
+    top: 31px;
+    left: 21px;
+    bottom: 17px;
+}
+
+.offer-details-price:before {
+    content: '€';
+
+}
+
+.offer-details-price:after {
+    content: 'from';
+    font-size: 10px;
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+}
+
+.offer-details-view {
+    font-size: 14px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    bottom: 17px;
+    left: 126px;
+    color: white;
+}
+
+.offer-details-view:after {
+    content: '⟩';
+    color: #f9b291;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.copyright {
     clear: both;
     color: white;
     text-align: center;
     font-size: 12px;
-
-
 }
+
 .clearfix:after {
     content: " ";
     display: block;
