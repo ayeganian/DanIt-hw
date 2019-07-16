@@ -39,7 +39,6 @@
 }
 .logo-text:hover{
     color: #f26522;
-
 }
 b:first-child{
     font-size: 29px;
@@ -58,27 +57,84 @@ b:first-child{
     margin-top: 5px;
 }
 .offer{
+
     float: left;
     text-align: center;
     margin-bottom: 60px;
     margin-right: 68px;
-
+    position: relative;
+    display: inline-block;
 
 }
+
 .offer:nth-of-type(3n){
     margin-right: 0;
 }
 .offer-item{
     color: white;
     font-size: 18px;
+}
 
 
-    /*display: inline-block;*/
+.offer-item:hover {
+    color: #f26522;
+}
+.layer2-details {
+    position: absolute;
+    display: none;
 
+    /*!*bottom: 63px;*!*/
+    /*!*transition: left 500ms linear 0ms;*!*/
 
+    top: 137px;
+    left: 0;
+height: 63px;
+width: 307px;
+background-color: #f26522;
+color: white;
+}
+.offer:hover  .layer2-details {
+  display: block;
+}
+
+.layer2-details-price{
+font-size: 20px;
+position: absolute;
+top: 31px;
+left: 21px;
+bottom: 17px;
+}
+.layer2-details-price:before{
+content: '€';
 
 }
+.layer2-details-price:after{
+content: 'from';
+font-size: 10px;
+position: absolute;
+bottom: 22px;
+left: 0;
+}
+
+.layer2-details-view{
+font-size: 14px;
+position: absolute;
+top: 35px;
+right: 0;
+bottom: 17px;
+left: 126px;
+
+}
+.layer2-details-view:after{
+content: '⟩';
+color: #f9b291;
+font-weight: bold;
+padding-left: 15px;
+}
 img{
+
+    height: 200px;
+    width: 307px;
     margin-bottom: 22px;
 }
 .offer-item-photo{
