@@ -1,0 +1,73 @@
+body {
+
+    font-family: Verdana, "Trebuchet MS", Geneva, sans-serif;
+    background-image: url(img/bcg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a:link{
+    color: #3cb878;
+}
+a:hover{
+    text-decoration: underline;
+}
+.nav-bar{
+    /*height: 56px;*/
+    background-color: rgba(0, 0, 0, 0.42);
+    color: white;
+    padding: 22px 75px 19px 81px;
+
+}
+.nav-bar>h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+
+ }
+.nav-bar>h1:hover{
+    color: #3cb878;
+}
+.nav-bar>p{
+    font-size: 14px;
+    display: inline-block;
+
+}
+.registration-bar{
+    width: 444px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+.registration-bar-content{
+    padding: 30px 60px;
+}
+.registration-bar::before{
+    content: '';
+    background-color: #329a65;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 29px;
+}
+.registration-form>input{
+    width: 322px;
+    height: 46px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    padding-left: 18px;
+    margin-bottom: 9px;
+}
+
+.create-account-button {
+    background-color: #329a65;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    /*padding: 17px 100px;*/
+    /*margin-bottom: 32px;*/
+}
