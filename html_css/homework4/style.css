@@ -1,50 +1,111 @@
 body {
-
     font-family: Verdana, "Trebuchet MS", Geneva, sans-serif;
     background-image: url(img/bcg.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-a:link{
+.page {
+
+}
+
+a:link {
     color: #3cb878;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-.nav-bar{
+
+a:visited {
+    color: #3cb878;
+}
+
+/*HEADER*/
+.nav-bar {
     /*height: 56px;*/
     background-color: rgba(0, 0, 0, 0.42);
     color: white;
     padding: 22px 75px 19px 81px;
 
 }
-.nav-bar>h1{
+
+.nav-bar > h1 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
 
- }
-.nav-bar>h1:hover{
+}
+
+.nav-bar > h1:hover {
     color: #3cb878;
 }
-.nav-bar>p{
+
+.nav-bar-options {
+    float: right;
+}
+
+.calendar {
+    display: inline-block;
+    width: 19px;
+    height: 20px;
+    background: url(img/css_sprites.png) -106px -49px;
+    margin-right: 28px;
+}
+
+.forum {
+    display: inline-block;
+    width: 28px;
+    height: 20px;
+    background: url(img/css_sprites.png) -58px -10px;
+    margin-right: 28px;
+}
+
+.journey {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(img/css_sprites.png) -50px -50px;
+    margin-right: 50px;
+}
+
+.calendar:hover {
+    background: url(img/css_sprites.png) -106px -10px;
+}
+
+.forum:hover {
+    background: url(img/css_sprites.png) -10px -10px;
+}
+
+.journey:hover {
+    background: url(img/css_sprites.png) -10px -50px;
+}
+
+
+.nav-bar > p {
     font-size: 14px;
     display: inline-block;
 
 }
-.registration-bar{
+
+/*Форма*/
+.registration-bar {
     width: 444px;
     background-color: white;
     border-radius: 5px;
     margin: 0 auto;
 
+
 }
-.registration-bar-content{
+
+.registration-bar-content {
+    margin-top: 65px;
     padding: 30px 60px;
+    position: relative;
 }
-.registration-bar::before{
+
+.registration-bar::before {
     content: '';
     background-color: #329a65;
     float: left;
@@ -52,13 +113,107 @@ a:hover{
     height: 18px;
     margin-top: 29px;
 }
-.registration-form>input{
+
+.Sign-up {
+    float: left;
+}
+
+.Log-in {
+    float: right;
+}
+
+.registration-soc-netw {
+    margin-top: 15px;
+    margin-bottom: 33px;
+}
+
+.social-netw-but {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    height: 46px;
+    width: 157px;
+
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    vertical-align: middle;
+
+}
+
+
+.social-netw-but:first-of-type {
+    background-color: #305db8;
+}
+
+.social-netw-but:nth-of-type(2) {
+    background-color: #df4a32;
+}
+
+.social-netw-but > img {
+    float: left;
+
+
+}
+
+.social-netw-but > p {
+    margin-top: 5px;
+}
+
+.social-netw-but-img {
+    border-right: 1px solid #c6c6c6;
+    padding: 5px 17px 5px 10px;
+}
+
+.alternate-reg-way-zone {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #c6c6c6;
+
+}
+
+.alternate-reg-way:before {
+    content: '';
+    display: block;
+    width: 135px;
+    position: absolute;
+    border-bottom: 1px solid #eaeaea;
+    top: 146px;
+    right: 247px;
+}
+
+.alternate-reg-way:after {
+    content: '';
+    display: block;
+    width: 135px;
+    position: absolute;
+    border-bottom: 1px solid #eaeaea;
+    top: 146px;
+    left: 249px;
+}
+
+.registration-form {
+
+
+}
+
+.registration-form > input {
     width: 322px;
     height: 46px;
     border: 1px solid #ebebeb;
     border-radius: 3px;
     padding-left: 18px;
     margin-bottom: 9px;
+}
+
+.registration-form > input:focus {
+    outline: none;
+    box-shadow: 2px 2px 8px 3px #dbdbdb;
+}
+
+#agreement {
+    margin-top: 22px;
+    margin-bottom: 28px;
 }
 
 .create-account-button {
@@ -68,6 +223,18 @@ a:hover{
     border: none;
     border-radius: 3px;
     text-align: center;
-    /*padding: 17px 100px;*/
-    /*margin-bottom: 32px;*/
+
+}
+
+
+.clearfix {
+
+    clear: both;
+}
+
+/* */
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
 }
