@@ -5,10 +5,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.page {
-
-}
-
 a:link {
     color: #3cb878;
 }
@@ -27,7 +23,6 @@ a:visited {
     background-color: rgba(0, 0, 0, 0.42);
     color: white;
     padding: 22px 75px 19px 81px;
-
 }
 
 .nav-bar > h1 {
@@ -35,11 +30,11 @@ a:visited {
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
-
 }
 
 .nav-bar > h1:hover {
     color: #3cb878;
+    transition: all ease-in-out 1s;
 }
 
 .nav-bar-options {
@@ -72,14 +67,17 @@ a:visited {
 
 .calendar:hover {
     background: url(img/css_sprites.png) -106px -10px;
+    transition: all ease-in-out 1s;
 }
 
 .forum:hover {
     background: url(img/css_sprites.png) -10px -10px;
+    transition: all ease-in-out 1s;
 }
 
 .journey:hover {
     background: url(img/css_sprites.png) -10px -50px;
+    transition: all ease-in-out 1s;
 }
 
 
@@ -95,14 +93,13 @@ a:visited {
     background-color: white;
     border-radius: 5px;
     margin: 0 auto;
-
-
 }
 
 .registration-bar-content {
     margin-top: 65px;
     padding: 30px 60px;
     position: relative;
+
 }
 
 .registration-bar::before {
@@ -114,55 +111,94 @@ a:visited {
     margin-top: 29px;
 }
 
-.Sign-up {
-    float: left;
+.Log-in {
+    position: absolute;
+    top: 33px;
+    right: 59px;
 }
 
-.Log-in {
-    float: right;
-}
 
 .registration-soc-netw {
+    text-align: right;
     margin-top: 15px;
     margin-bottom: 33px;
 }
 
-.social-netw-but {
+.a {
     display: inline-block;
+    line-height: 46px;
+
     font-size: 16px;
     color: white;
     height: 46px;
-    width: 157px;
-
-    border: none;
+    width: 114px;
     border-radius: 3px;
-    box-sizing: border-box;
-    vertical-align: middle;
+    background-color: #264b96;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 17px;
+}
+
+.b {
+    display: inline-block;
+    line-height: 46px;
+    height: 46px;
+    width: 114px;
+    border-radius: 3px;
+    background-color: #c3412c;
+    position: relative;
+    padding-left: 13px;
+    padding-right: 30px;
+}
+
+.b:link, .a:link {
+    color: white;
+    height: 46px;
+    text-decoration: none;
+}
+
+.b:visited, .a:visited {
+    color: white;
+}
+
+.a:before {
+    content: '';
+    height: 20px;
+    width: 10px;
+    background: url("img/facebook.png");
+    position: absolute;
+    top: 13px;
+    left: 20px;
+}
+
+.b:before {
+    content: '';
+    height: 16px;
+    width: 25px;
+    background: url("img/Google.png");
+    position: absolute;
+    top: 15px;
+    left: 13px;
+
 
 }
 
-
-.social-netw-but:first-of-type {
-    background-color: #305db8;
+.a:after {
+    content: '';
+    height: 28px;
+    border-right: 1px solid #224387;
+    position: absolute;
+    top: 9px;
+    left: 47px;
 }
 
-.social-netw-but:nth-of-type(2) {
-    background-color: #df4a32;
-}
-
-.social-netw-but > img {
-    float: left;
-
-
-}
-
-.social-netw-but > p {
-    margin-top: 5px;
-}
-
-.social-netw-but-img {
-    border-right: 1px solid #c6c6c6;
-    padding: 5px 17px 5px 10px;
+.b:after {
+    content: '';
+    height: 28px;
+    border-right: 1px solid #af3a28;
+    position: absolute;
+    top: 9px;
+    left: 47px;
 }
 
 .alternate-reg-way-zone {
@@ -192,10 +228,6 @@ a:visited {
     left: 249px;
 }
 
-.registration-form {
-
-
-}
 
 .registration-form > input {
     width: 322px;
@@ -223,16 +255,47 @@ a:visited {
     border: none;
     border-radius: 3px;
     text-align: center;
+    width: 324px;
+    cursor: pointer;
 
 }
 
 
-.clearfix {
+/*.input-check label {*/
+/*    !*font-size: 14px;*!*/
+/*    !*line-height: 22px;*!*/
+/*    !*display: block;*!*/
+/*    !*padding-left: 20px;*!*/
+/*    !*position: relative;*!*/
+/*    z-index: 1;*/
+/*    cursor: pointer;*/
+/*}*/
 
-    clear: both;
-}
+/*.input-check label:before {*/
+/*    !*display: block;*!*/
+/*    !*position: absolute;*!*/
+/*    !*left: 0;*!*/
+/*    !*top: 50%;*!*/
+/*    !*width: 14px;*!*/
+/*    !*height: 14px;*!*/
+/*    !*margin-top: -7px;*!*/
+/*    background: url(img/checkboxempty.png);*/
+/*    z-index: 5;*/
+/*    content: '';*/
+/*}*/
 
-/* */
+/*.input-check input:checked + label:before {*/
+/*    background: url(img/checkbox.png) no-repeat;*/
+/*}*/
+
+
+
+/*.clearfix {*/
+
+/*    clear: both;*/
+/*}*/
+
+/*content: '✔';*/
 .clearfix:after {
     content: '';
     display: block;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="page">
+
     <header class="nav-bar">
         <h1>JOURNEY</h1>
         <div class="nav-bar-options"><p>Welcome, <a href="#">Log In</a> or <a href="#">Sign Up</a></p></div>
@@ -20,23 +20,21 @@
     </header>
     <section class="registration-bar">
         <div class="registration-bar-content">
-            <p class="Sign-up">Sign Up</p>
-            <a href="#" class="Log-in">Log In</a>
-            <div class="clearfix"></div>
-            <div class="registration-soc-netw">
-
-                <button href="#" class="social-netw-but">
-                    <img class="social-netw-but-img" src="img/facebook.png" alt="logo">
-                    <p>Facebook</p>
-                </button>
-                <button href="#" class="social-netw-but">
-                    <img class="social-netw-but-img" src="img/Google.png"  alt="logo">
-                    <p>Google</p>
-                </button>
+            <div class="">
+                <p>Sign Up</p>
+                <a href="#" class="Log-in">Log In</a>
             </div>
+
+            <div class="registration-soc-netw">
+            <a class="a" href="#">Facebook</a>
+            <a class=" b" href="#">Google</a>
+        </div>
+
+
             <div class="alternate-reg-way-zone">
                 <span class="alternate-reg-way">or</span>
             </div>
+
 
             <form action="" class="registration-form">
                 <input type="text" name="FirstName" placeholder="First Name">
@@ -44,14 +42,14 @@
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Choose Password">
                 <input type="password" placeholder="Confirm Password">
-                <label for="agreement"><input type="checkbox" id="agreement">
-                    "Agree our <a href="#">Terms & Conditions"</a></label>
+                <div class="input-check"><label for="agreement"><input type="checkbox" id="agreement">
+                    "Agree our <a href="#">Terms & Conditions"</a></label></div>
                 <input type="submit" value="Create Account" class="create-account-button">
 
             </form>
         </div>
     </section>
-</section>
+
 </body>
 </html>
 
