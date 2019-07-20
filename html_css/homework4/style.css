@@ -242,6 +242,9 @@ a:visited {
     outline: none;
     box-shadow: 2px 2px 8px 3px #dbdbdb;
 }
+input[type="text"],input[type="email"],input[type="password"]{
+    width: 305px;
+}
 
 #agreement {
     margin-top: 22px;
@@ -257,45 +260,30 @@ a:visited {
     text-align: center;
     width: 324px;
     cursor: pointer;
-
 }
 
 
-/*.input-check label {*/
-/*    !*font-size: 14px;*!*/
-/*    !*line-height: 22px;*!*/
-/*    !*display: block;*!*/
-/*    !*padding-left: 20px;*!*/
-/*    !*position: relative;*!*/
-/*    z-index: 1;*/
-/*    cursor: pointer;*/
-/*}*/
+.input-check label {
+      position: relative;
+}
 
-/*.input-check label:before {*/
-/*    !*display: block;*!*/
-/*    !*position: absolute;*!*/
-/*    !*left: 0;*!*/
-/*    !*top: 50%;*!*/
-/*    !*width: 14px;*!*/
-/*    !*height: 14px;*!*/
-/*    !*margin-top: -7px;*!*/
-/*    background: url(img/checkboxempty.png);*/
-/*    z-index: 5;*/
-/*    content: '';*/
-/*}*/
+.input-check label:after {
+    content: '';
+    position: absolute;
+    left: -19px;
+    top: 16%;
+    width: 15px;
+    height: 14px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    background-color: white;
+}
 
-/*.input-check input:checked + label:before {*/
-/*    background: url(img/checkbox.png) no-repeat;*/
-/*}*/
+.input-check input:checked + label:after {
+       background: url(img/checkbox.png) no-repeat;
+}
 
 
-
-/*.clearfix {*/
-
-/*    clear: both;*/
-/*}*/
-
-/*content: '✔';*/
 .clearfix:after {
     content: '';
     display: block;
