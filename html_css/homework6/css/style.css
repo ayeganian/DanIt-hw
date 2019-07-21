@@ -1,0 +1,205 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1{
+    font-size: 27pt;
+    font-weight: bold;
+    color: rgba(24, 180, 207, 255);
+}
+/*HEADER*/
+
+.header{
+    height: 70px;
+    background-color: #1d2124;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+a:link{
+    color: white;
+    font-size: 15px;
+}
+.nav-bar>a{
+    text-transform: uppercase;
+    padding-left: 37px;
+}
+.nav-bar>a:first-of-type{
+    padding-left: 0;
+}
+.header>h2{
+    margin-right: auto;
+}
+.logo-block,.search-block{
+    width: 70px;
+    height: 70px;
+    background-color: #1a1d20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-block{
+    margin-left: auto;
+}
+
+/*SECTION 1*/
+
+.news{
+    height: 404px;
+    background-image: url("../img/header-bg.jpeg");
+    background-attachment: fixed;
+    color: white;
+    font-size: 27px;
+    display: flex;
+    flex-direction: row;
+  flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.news:first-child{
+    width: 100%;
+
+}
+.Subscribe{
+
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    height: 55px;
+    width: 170px;
+    border-radius: 3px;
+    background-color: #89ca62;
+}
+.Articles-link{
+
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    height: 55px;
+    width: 170px;
+    border-radius: 3px;
+    background-color: #14b9d5;
+}
+
+
+/*SECTION 2*/
+.posts{
+    background-color: #f2f2f2;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+
+}
+.posts-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.posts-items:first-child {
+
+    width: 100%;
+}
+
+.posts-items:not(:first-child) {
+    flex: 1;
+}
+.posts-items>div{
+    background-color: white;
+}
+
+
+
+
+/*SECTION 3*/
+.clients{
+    height: 598px;
+    background-image: url("../img/parallax-bg.jpeg");
+    background-attachment: fixed;
+}
+
+.clients-items{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(2,1fr);
+}
+.clients-items-header{
+
+    grid-column: 1/5;
+}
+
+/*SECTION 4*/
+
+.Top-rated{
+    height: 381px;
+
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.Top-rated-header{
+    grid-column: 1/8;
+
+}
+/*SECTION 5*/
+.hot-news-block{
+    margin: 0 auto;
+    max-width: 950px;
+    height: 1902px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 60px;
+    font-size: 14px;
+
+}
+
+.hot-news-block>div{
+    background-color: #f9f7f7;
+}
+
+.r1c1,.r2c1,.r3c1{
+    grid-column: 1/3;
+}
+.r2c2,.r3c2{
+    grid-column: 3/5;
+}
+.r4c2{
+    grid-column: 2/4;
+}
+
+
+
+
+/*FOOTER*/
+
+
+
+.copyright{
+    height: 80px;
+    background-color: #1d2124;
+    grid-template-areas: "rights logo";
+}
+
+.rights{
+    color: white;
+}
+
+
+
+/*.clearfix:after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    clear: both;*/
+/*}*/
