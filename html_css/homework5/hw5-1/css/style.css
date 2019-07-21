@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
+.pricing-table {
+    font-family: 'Arimo', sans-serif;
+    margin: 0 auto;
+    border: 22px solid #3a4965;
+    text-align: center;
+    text-transform: uppercase;
+    color: #484848;
+
+}
+
+thead {
+    font-weight: bold;
+}
+
+td {
+    vertical-align: middle;
+    width: 277px;
+    border: none;
+    box-shadow: 4px 0px 6px -5px #757575 inset;
+}
+
+td > i {
+    color: #848484;
+    padding-right: 10px;
+}
+
+tr {
+    height: 69px;
+
+}
+
+tr:nth-of-type(even) {
+    background-color: #e3e3e3;
+}
+
+tr:nth-of-type(odd) {
+
+    background-color: #f2f2f2;
+}
+
+/*THEAD*/
+
+.plans {
+    background-color: #fafafa;
+    font-size: 18px;
+}
+
+.plans > p > span {
+    font-size: 30px;
+}
+
+.green {
+    background-color: #89c331;
+    font-size: 24px;
+    color: white;
+    height: 70px;
+}
+
+.pink {
+    background-color: #f04a56;
+    font-size: 30px;
+    color: white;
+}
+
+.blue {
+    background-color: #20807c;
+    font-size: 24px;
+    color: white;
+}
+
+#plans-prices {
+    height: 86px;
+    background-color: #fafafa;
+    font-size: 60px;
+}
+
+#plans-prices > td > sup {
+    font-size: 24px;
+    vertical-align: super;
+}
+
+.green-price::after {
+    content: 'Per Month';
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: -34px;
+    font-weight: lighter;
+}
+
+.pink-price::after {
+    content: 'Per Month';
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: -34px;
+    font-weight: lighter;
+}
+
+.blue-price::after {
+    content: 'Per Month';
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: -34px;
+    font-weight: lighter;
+}
+
+
+/*TFOOT*/
+
+.buttons > td {
+    height: 110px;
+}
+
+.tfoot-buttons {
+    width: 192px;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #484848;
+    box-shadow: 0 9px 0 #404040;
+    border: none;
+    border-radius: 2px;
+    padding-top: 5px;
+}
+
+.tfoot-buttons:hover{
+    filter: brightness(70%);
+    transform: skew(-5deg);
+}
+
+.buttons > td:nth-of-type(1) {
+    background-color: #dddddd;
+    border-right: 1px solid #a1a2a5;
+}
+
+.buttons > td:nth-of-type(2) {
+    background-color: #eeeeee;
+}
+
+.buttons > td:nth-of-type(3) {
+    background-color: #f4f4f4;
+}
+
+.buttons > td:nth-of-type(4) {
+    background-color: #eeeeee;
+}
+
+.buttons > td:nth-child(2) button {
+    background-color: #89c331;
+    box-shadow: 0 9px 0 #79b027;
+}
+
+.buttons > td:nth-child(3) button {
+    background-color: #f04a56;
+    box-shadow: 0 9px 0 #df3a46;
+}
+
+.buttons > td:nth-child(4) button {
+    background-color: #20807c;
+    box-shadow: 0 9px 0 #16736f;
+}
+
