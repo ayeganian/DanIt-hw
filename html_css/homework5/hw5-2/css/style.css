@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+
+.pricing-table {
+    font-family: 'Arimo', sans-serif;
+    margin: 0 auto;
+    border: 22px solid #3a4965;
+    text-align: center;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    color: #484848;
+    line-height: 1.5em;
+}
+
+thead {
+
+    font-weight: bold;
+}
+
+thead > tr {
+    height: 113px;
+}
+
+td:first-of-type {
+    width: 198px;
+}
+
+td {
+    vertical-align: middle;
+    width: 157px;
+    border: none;
+    box-shadow: 0px -7px 4px -6px #757575 inset;
+}
+
+
+td > i {
+    color: #848484;
+}
+
+tr {
+    height: 69px;
+}
+
+td:nth-of-type(even) {
+    background-color: #e3e3e3;
+}
+
+td:nth-of-type(odd) {
+
+    background-color: #f2f2f2;
+}
+
+/*THEAD*/
+#plans {
+    background-color: #fafafa;
+}
+
+#plans {
+    background-color: #fafafa;
+    font-size: 14px;
+
+}
+
+#plans > p > span {
+    font-size: 20px;
+}
+
+td.green {
+    background-color: #89c331;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    height: 167px;
+    line-height: 1em;
+}
+
+td.pink {
+    background-color: #f04a56;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    height: 167px;
+    line-height: 1em;
+}
+
+td.blue {
+    background-color: #20807c;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    height: 167px;
+    line-height: 1em;
+}
+
+.promotion > p {
+    font-size: 24px;
+}
+
+.promotion > sup {
+    font-size: 18px;
+    vertical-align: super;
+}
+
+.promotion {
+    position: relative;
+}
+
+#duration-stand, #duration-ult, #duration-prem {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    vertical-align: center;
+}
+
+/*TFOOT*/
+
+.tfoot-buttons {
+    width: 144px;
+    height: 41px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #484848;
+    box-shadow: 0 9px 0 #404040;
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.tfoot-buttons:hover {
+    filter: brightness(70%);
+    transform: skew(5deg);
+}
+
+
+
+
