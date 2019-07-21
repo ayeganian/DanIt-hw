@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Arimo-Regular";
+  src: url("./fonts/Arimo-Regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Arimo-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./fonts/Arimo-Regular.svg") format("svg"), /* Legacy iOS */
+  url("./fonts/Arimo-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("./fonts/Arimo-Regular.woff") format("woff"), /* Modern Browsers */
+  url("./fonts/Arimo-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arimo-Bold";
+  src: url("./fonts/Arimo-Bold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Arimo-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./fonts/Arimo-Bold.svg") format("svg"), /* Legacy iOS */
+  url("./fonts/Arimo-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("./fonts/Arimo-Bold.woff") format("woff"), /* Modern Browsers */
+  url("./fonts/Arimo-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
