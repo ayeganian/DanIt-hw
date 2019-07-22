@@ -74,6 +74,7 @@ tr:nth-of-type(odd) {
     height: 86px;
     background-color: #fafafa;
     font-size: 60px;
+    text-align: left;
 }
 
 #plans-prices > td > sup {
@@ -81,29 +82,43 @@ tr:nth-of-type(odd) {
     vertical-align: super;
 }
 
-.green-price::after {
-    content: 'Per Month';
+.period {
     font-size: 18px;
     text-transform: uppercase;
-    margin-left: -34px;
     font-weight: lighter;
+    position: absolute;
+    top: 47px;
+    left: 136px;
 }
 
-.pink-price::after {
-    content: 'Per Month';
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-left: -34px;
-    font-weight: lighter;
+.green-price, .pink-price, .blue-price {
+    position: relative;
+    margin-left: -20px;
 }
 
-.blue-price::after {
-    content: 'Per Month';
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-left: -34px;
-    font-weight: lighter;
-}
+/*.green-price::after {*/
+/*    content: 'Per Month';*/
+/*    font-size: 18px;*/
+/*    text-transform: uppercase;*/
+/*    margin-left: -34px;*/
+/*    font-weight: lighter;*/
+/*}*/
+
+/*.pink-price::after {*/
+/*    content: 'Per Month';*/
+/*    font-size: 18px;*/
+/*    text-transform: uppercase;*/
+/*    margin-left: -34px;*/
+/*    font-weight: lighter;*/
+/*}*/
+
+/*.blue-price::after {*/
+/*    content: 'Per Month';*/
+/*    font-size: 18px;*/
+/*    text-transform: uppercase;*/
+/*    margin-left: -34px;*/
+/*    font-weight: lighter;*/
+/*}*/
 
 
 /*TFOOT*/
@@ -126,7 +141,7 @@ tr:nth-of-type(odd) {
     padding-top: 5px;
 }
 
-.tfoot-buttons:hover{
+.tfoot-buttons:hover {
     filter: brightness(70%);
     transform: skew(-5deg);
 }
