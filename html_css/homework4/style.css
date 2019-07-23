@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
 }
 
+
 a:link {
     color: #3cb878;
 }
@@ -31,10 +32,15 @@ a:visited {
     text-transform: uppercase;
     display: inline-block;
 }
+.nav-bar > h1>a{
+    color: white;
+}
 
-.nav-bar > h1:hover {
+.nav-bar > h1>a:hover {
     color: #3cb878;
+    text-decoration: none;
     transition: all ease-in-out 1s;
+
 }
 
 .nav-bar-options {
@@ -67,17 +73,17 @@ a:visited {
 
 .calendar:hover {
     background: url(img/css_sprites.png) -106px -10px;
-    transition: all ease-in-out 1s;
+
 }
 
 .forum:hover {
     background: url(img/css_sprites.png) -10px -10px;
-    transition: all ease-in-out 1s;
+
 }
 
 .journey:hover {
     background: url(img/css_sprites.png) -10px -50px;
-    transition: all ease-in-out 1s;
+
 }
 
 
@@ -86,7 +92,12 @@ a:visited {
     display: inline-block;
 
 }
+/*Центрирование*/
+.content-without-nav{
+   align-content: center;
+    margin-top: 56px;
 
+}
 /*Форма*/
 .registration-bar {
     width: 444px;
@@ -94,12 +105,10 @@ a:visited {
     border-radius: 5px;
     margin: 0 auto;
 }
-
 .registration-bar-content {
-    margin-top: 65px;
     padding: 30px 60px;
     position: relative;
-
+    align-content: center;
 }
 
 .registration-bar::before {
