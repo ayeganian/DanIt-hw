@@ -90,7 +90,7 @@ b:first-child {
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid;
-    border-image: linear-gradient(to top, black, white) 1;
+    border-image: linear-gradient(to top, black, white) 2;
     position: relative;
     overflow: hidden;
 
