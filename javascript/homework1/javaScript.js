@@ -12,6 +12,7 @@ while (isNaN(Age) || Age === null || Age < 1 || Age > 110) {
 }
 if (Age < 18) {
     alert(`You are not allowed to visit this website`);
+
 } else if (Age >= 18 && Age <= 22) {
     if (confirm(`Are you sure you want to continue?`)) {
         alert(`Welcome ${Name}`);
