@@ -1,4 +1,3 @@
-
 let num1 = prompt('Please enter the first number', "6");
 while (isNaN(num1) || num1 === '' || num1 === null) {
     num1 = prompt('Please enter the first number again', "6");
@@ -15,9 +14,6 @@ while (operation !== '+' && operation !== '-' && operation !== '*' && operation 
 }
 
 function Calc(firstVar, secVar, action) {
-    firstVar = num1;
-    secVar = num2;
-    action = operation;
     switch (action) {
         case '+':
             result = (+(firstVar) + +(secVar));
@@ -38,5 +34,5 @@ function Calc(firstVar, secVar, action) {
     return result;
 }
 
-console.log(Calc());
+console.log(Calc(num1, num2, operation));
 
