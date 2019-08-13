@@ -5,19 +5,14 @@ function createNewUser() {
         name: firstName,
         surname: lastName,
         getLogin() {
-           result= (this.name[0].toLowerCase() + this.surname.toLowerCase());
-            return result
+            return (this.name[0].toLowerCase() + this.surname.toLowerCase());
+
         }
     };
-
     console.log(newUser.getLogin());
-
+    console.log(newUser);
 }
 
-createNewUser();
-
-
-
-
+const  User = createNewUser();
 
 
