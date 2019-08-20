@@ -1,35 +1,50 @@
- const PriceInput = document.createElement('input');
+const PriceInput = document.createElement('input');
+PriceInput.classList.add('Price-Input')
+const PriceInputName = document.createElement('p');
+PriceInputName.innerText = 'Price, $';
+PriceInputName.classList.add('Price-Input-Name')
 
+const previewText = document.createElement('span');
+const uncorrectPreview = document.createElement('p');
+uncorrectPreview.innerText = `Please enter correct price`;
+uncorrectPreview.style.color ='red';
 
-const preview = document.createElement('span');
+const removeBtn = document.createElement('button');
+removeBtn.innerText = `X`;
+removeBtn.classList.add('remove-btn');
 
- // const cancelBtn = document.createElement('button');
- // cancelBtn.innerText = `X`;
-
-PriceInput.addEventListener('focus', () =>{
+PriceInput.addEventListener('focus', () => {
     PriceInput.style.border = "2px solid green";
 });
+PriceInput.addEventListener('blur', () => {
 
- PriceInput.addEventListener( 'keyup', () =>{
-     preview.innerText = `Текущая цена: ${PriceInput.value}`;
+    if (PriceInput.value <= 0 || PriceInput.value === undefined || Number(PriceInput.value) === NaN ){
+        PriceInput.style.backgroundColor = "";
+        PriceInput.style.border = "2px solid red";
+        previewText.remove();
+        document.querySelector('p').before(uncorrectPreview);
+        uncorrectPreview.append(removeBtn);
+    } else {
+        PriceInput.style.border = "";
+        PriceInput.style.backgroundColor = "green";
+        uncorrectPreview.remove();
+         document.querySelector('p').before(previewText);
+         document.querySelector('span').after(removeBtn);
+        previewText.innerText = `Текущая цена: ${PriceInput.value}`;
+    }
+});
 
+removeBtn.addEventListener( 'click', () => {
+    removeBtn.remove();
+    previewText.remove();
+    PriceInput.value='';
+    PriceInput.style.backgroundColor = "";
+    PriceInput.style.border = "";
+    uncorrectPreview.remove();
+})
 
- })
-
-
-
- document.querySelector('script').before(PriceInput);
-
- document.querySelector('input').before(preview);
- // document.querySelector('button').after(cancelBtn);
-
-
-
-
-
-// PriceInput.addEventListener('unclick', () =>{
-//     PriceInput.style.border = "none";
-// });
+document.querySelector('script').before(PriceInput);
+document.querySelector('input').before(PriceInputName);
 
 
 

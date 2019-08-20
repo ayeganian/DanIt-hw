@@ -1,0 +1,22 @@
+#preview {
+    background-color: palegreen;
+    width: 50px;
+    height: 50px;
+}
+
+.Price-Input {
+    border-radius: 5px;
+    width: 100px;
+
+}
+
+.Price-Input-Name {
+    margin-right: 10px;
+}
+
+.remove-btn {
+    background-color: white;
+    border: 1px solid darkolivegreen;
+    border-radius: 50%;
+    margin-left: 10px;
+}

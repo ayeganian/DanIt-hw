@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5e33a2e-11b5-4999-b76d-ea0e259e82fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../homework1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework1/javaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/../homework1/javaScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../homework2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework8/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../homework8/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homework8/javaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/../homework8/javaScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/теор.md" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,7 +19,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/homework4 — копия (2)/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="39" selection-start-line="39" selection-end-line="40" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Desktop/homework4 — копия (2)/javaScript.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="426" lean-forward="true" selection-start-line="426" selection-end-line="426" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/homework4 — копия (2)/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,7 +68,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/javaScript.js" />
         <option value="C:/fem3/javascript/classwork/js-classwork-5__Functions/js/script.js" />
+        <option value="$PROJECT_DIR$/../homework8/javaScript.js" />
         <option value="$PROJECT_DIR$/javaScript.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$USER_HOME$/Desktop/homework4 — копия (2)/index.html" />
+        <option value="$USER_HOME$/Desktop/homework4 — копия (2)/style.css" />
+        <option value="$USER_HOME$/Desktop/homework4 — копия (2)/javaScript.js" />
       </list>
     </option>
   </component>
@@ -48,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="215" />
     <option name="y" value="39" />
     <option name="width" value="1400" />
@@ -60,17 +99,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="homework4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework4" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -112,14 +141,16 @@
       <workItem from="1564663631465" duration="6644000" />
       <workItem from="1564727148017" duration="11965000" />
       <workItem from="1565361805711" duration="239000" />
+      <workItem from="1566283897685" duration="14771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18848000" />
+    <option name="totallyTimeSpent" value="33619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1869455" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -158,13 +189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/fem3/javascript/classwork/js-classwork-5__Functions/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -175,10 +199,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../homework8/javaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="1368">
+          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="74" lean-forward="true" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/homework4 — копия (2)/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="39" selection-start-line="39" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/homework4 — копия (2)/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/homework4 — копия (2)/javaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="426" lean-forward="true" selection-start-line="426" selection-end-line="426" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
