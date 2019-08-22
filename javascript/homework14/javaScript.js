@@ -19,4 +19,3 @@ $('#tabs').on('click', (event) => {
 
 
 
-js 9 new, js 14, js 11
