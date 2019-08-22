@@ -1,58 +1,18 @@
+const tabsContents = document.getElementsByClassName('tab');
 
-const tabsContent = document.querySelectorAll('#tabs-content li');
-for (let i=0; i<=tabsContent.length; i++) {
-    tabsContent[i].hidden = true;
-    tabsContent[0].hidden = false;
-
-
-    const Akali = document.getElementById('Akali');
-
-    Akali.addEventListener('click', () => {
-        const tabsContent = document.querySelectorAll('#tabs-content li');
-        for (let i = 0; i <= tabsContent.length; i++) {
-            tabsContent[0].hidden = false;
-            tabsContent[i].hidden = true;
-
+const clickHandler = (event) => {
+    const clickedLi = event.target;
+    const activeTab = document.getElementsByClassName('active');
+    if (activeTab.length > 0) activeTab[0].classList.remove('active');
+    clickedLi.classList.add('active');
+    for (let element of tabsContents) {
+        element.classList.add('tab-hidden');
+        if (element.dataset.tab === clickedLi.dataset.tab) {
+            element.classList.remove('tab-hidden');
         }
-    });
-    const Anivia = document.getElementById('Anivia');
+    }
+};
+const tabsWrapper = document.getElementById('tabs');
+tabsWrapper.addEventListener('click', clickHandler);
 
-    Anivia.addEventListener('click', () => {
-        const tabsContent = document.querySelectorAll('#tabs-content li');
-        for (let i = 0; i <= tabsContent.length; i++) {
-            tabsContent[1].hidden = false;
-            tabsContent[i].hidden = true;
 
-        }
-    });
-    const Draven = document.getElementById('Draven');
-
-    Draven.addEventListener('click', () => {
-        const tabsContent = document.querySelectorAll('#tabs-content li');
-        for (let i = 0; i <= tabsContent.length; i++) {
-            tabsContent[2].hidden = false;
-            tabsContent[i].hidden = true;
-
-        }
-    });
-    const Garen = document.getElementById('Garen');
-
-    Garen.addEventListener('click', () => {
-        const tabsContent = document.querySelectorAll('#tabs-content li');
-        for (let i = 0; i <= tabsContent.length; i++) {
-            tabsContent[3].hidden = false;
-            tabsContent[i].hidden = true;
-
-        }
-    });
-    const Katarina = document.getElementById('Katarina');
-
-    Katarina.addEventListener('click', () => {
-        const tabsContent = document.querySelectorAll('#tabs-content li');
-        for (let i = 0; i <= tabsContent.length; i++) {
-            tabsContent[4].hidden = false;
-            tabsContent[i].hidden = true;
-
-        }
-    });
-}
