@@ -1,0 +1,159 @@
+.first-page {
+    width: 1280px;
+    margin: 0 auto;
+
+}
+.dark-theme{
+    background-color: black;
+    color: #c9c9c9;
+}
+
+.container {
+    margin-bottom: 50px;
+
+}
+
+.top-main-name {
+    padding-top: 61px;
+}
+
+.main-name {
+    display: inline-block;
+    color: #4bcaff;
+    font-size: 80px;
+    margin-bottom: 45px;
+}
+
+.main-name > span {
+    color: black;
+}
+.main-name-dark-theme{
+    color: #1522ff;
+}
+.main-name-dark-theme> span{
+    color: gainsboro;
+}
+
+.top-navbar {
+    font-size: 24px;
+    background-color: #35444f;
+    text-align: center;
+}
+
+.top-navbar-item {
+    display: inline-block;
+    color: white;
+    padding: 26px 42px 21px;
+}
+
+.top-navbar-item:hover {
+    background-color: #222f3a;
+    border: 1px solid white;
+    border-bottom: none;
+    border-top: none;
+}
+
+.image {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 74px;
+    border: 1px solid #b4b7ba;
+    padding: 75px 268px 73px 268px;
+    overflow: hidden;
+    width: 320px;
+    height: 381px;
+
+}
+
+.image img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.image img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.menubar {
+    display: inline-block;
+    width: 344px;
+    vertical-align: top;
+    border: 1px solid #b4b7ba;
+    box-sizing: border-box;
+}
+
+.menubar-item {
+
+    display: inline-block;
+    width: 343px;
+    box-sizing: border-box;
+    color: #495863;
+    font-size: 24px;
+    padding: 28px 0 28px 44px;
+    margin-right: 20px;
+}
+
+.menubar-item:hover {
+    color: black;
+    background-color: #dbdbdb;
+    padding-left: 68px;
+
+
+}
+
+.text-container {
+    clear: right;
+    margin-left: 450px;
+    margin-right: 40px;
+    line-height: normal;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #b4b7ba;
+}
+
+.footer-dark-theme{
+    background-color: #434343;
+}
+
+.footer-item {
+    display: inline-block;
+    color: black;
+    font-size: 28px;
+    padding: 21px 0 21px 44px;
+}
+
+.footer-item:hover {
+    text-decoration: underline;
+    color: #3181a6;
+}
+
+.footer-copyright {
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    padding: 21px 34px 21px 130px;
+}
+
+#change-theme-btn {
+    color: #35444f;
+    font-size: 18px;
+    background-color: rgba(53, 68, 79, 0.25);
+    display: block;
+    text-align: center;
+    line-height: 2.5em;
+    width: 150px;
+    height: 44px;
+    border-radius: 7px;
+    position: fixed;
+    top: 20px;
+    left: 1274px;
+}
+

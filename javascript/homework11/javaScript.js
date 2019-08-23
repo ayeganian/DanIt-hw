@@ -1,76 +1,42 @@
-
 document.addEventListener('keydown', (event) => {
+
+    function turnToBlue(button) {
+        const BtnWrp = document.querySelectorAll('#btn-wrapper> button');
+        BtnWrp.forEach((element) => {
+            element.style.backgroundColor = '#33333a';
+        })
+        button.style.backgroundColor = 'blue';
+    }
 
     switch (event.keyCode) {
         case 13:
-            const btn = document.querySelector('button.enter');
-            btn.style.backgroundColor = 'blue';
+            const clickedBtnEnter = document.querySelector('button.enter');
+            turnToBlue(clickedBtnEnter);
             break;
         case 83:
-            const btnS = document.querySelector('button.s');
-            btnS.style.backgroundColor = 'blue';
+            const clickedBtnS = document.querySelector('button.s');
+            turnToBlue(clickedBtnS);
             break;
         case 69:
-            const btnE = document.querySelector('button.e');
-            btnE.style.backgroundColor = 'blue';
+            const clickedBtnE = document.querySelector('button.e');
+            turnToBlue(clickedBtnE);
             break;
         case  79:
-            const btnO = document.querySelector('button.o');
-            btnO.style.backgroundColor = 'blue';
+            const clickedBtnO = document.querySelector('button.o');
+            turnToBlue(clickedBtnO);
             break;
         case 78:
-            const btnN = document.querySelector('button.n');
-            btnN.style.backgroundColor = 'blue';
+            const clickedBtnN = document.querySelector('button.n');
+            turnToBlue(clickedBtnN);
             break;
         case 76:
-            const btnL = document.querySelector('button.l');
-            btnL.style.backgroundColor = 'blue';
+            const clickedBtnL = document.querySelector('button.l');
+            turnToBlue(clickedBtnL);
             break;
         case 90:
-            const btnZ = document.querySelector('button.z');
-            btnZ.style.backgroundColor = 'blue';
+            const clickedBtnZ = document.querySelector('button.z');
+            turnToBlue(clickedBtnZ);
             break;
     }
 });
-
-
-// const SelectedButton;
-//
-// (event) => {
-//     let target = event.target;
-//     turnToBlue(target);
-// };
-//
-// function turnToBlue(button) {
-//     clickedElement.classList.toggle('highlight');
-// if (SelectedButton) { // убрать существующую подсветку, если есть
-//     SelectedButton.classList.remove('highlight');
-// }
-// SelectedButton = button;
-// SelectedButton.classList.add('highlight'); // подсветить новый td
-// }
-// const clickHandler = (event) => {
-//     const clickedBtn = event.target;
-//    const letter =clickedBtn.dataset.btn;
-// const class = document.getElementsByClassName(letter);
-//    letter.classList.toggle('highlight');
-// }
-
-// btns.addEventListener('click', clickHandler);
-
-/*
-
-const clickHandler = (event) => {
-    const clickedBtn = event.target;
-    alert(`the number of clicked button is ${clickedBtn.dataset.btnShmatton}`);
-    const wrapper = event.currentTarget;
-    for(let i = 0; i < wrapper.children.length; i++){
-      if(wrapper.children[i] === event.target){
-        alert(`the number of clicked button is ${i+1}`);
-      }
-    }
-};
-const gogi = document.getElementById('gogi');
-gogi.addEventListener('click', clickHandler);
-*/
 
