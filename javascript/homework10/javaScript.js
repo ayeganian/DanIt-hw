@@ -35,7 +35,7 @@ ConfirmPasswInput.addEventListener('click', () => {
         x.type = "password";
         ChangeShowPasswBtn(eye);
     }
-})ж
+})
 
 
 const Btn = document.querySelector('button.btn');
@@ -55,4 +55,4 @@ Btn.addEventListener('click', () => {
         }
     }
 }
-)ж
+)ы
