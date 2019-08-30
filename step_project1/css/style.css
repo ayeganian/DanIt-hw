@@ -594,8 +594,8 @@ h2:nth-of-type(4n) {
 
 .swiper-button-next {
     top: 752px;
-    /*right: 522px;*/
-    right: 337px;
+    right: 522px;
+    /*right: 337px;*/
     border: 1px solid #969a9c;
     width: fit-content;
     height: fit-content;
@@ -604,8 +604,8 @@ h2:nth-of-type(4n) {
 
 .swiper-button-prev {
     top: 752px;
-    /*left: 522px;*/
-    left: 337px;
+    left: 522px;
+    /*left: 337px;*/
     border: 1px solid #969a9c;
     width: fit-content;
     height: fit-content;
