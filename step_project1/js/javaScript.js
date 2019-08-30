@@ -20,74 +20,119 @@ tabsWrapper.addEventListener('click', clickHandler);
 
 <!--__________________________ Our amazing work section_____________________________________________________-->
 
-// randomiser for all
-/*const imgsArray = document.querySelector('.img-gallery');
-console.log(imgsArray);
-
-for(let counter = 0; counter <= 12; counter++){
-    console.log(imgsArray[counter]);
-
-}*/
-
 
 // tabs with categories
 
 const $tabs2 = $('.img-gallery-item');
 
+
 $('.tabs2-title').click((event) => {
 
-    // removing of button on categories
+// removing of button on other categories
     const LoadMoreBtn = document.querySelector('.load-more-btn');
-    if(event.target.dataset.category === 'all'){
+    if (event.target.dataset.category === 'all') {
         LoadMoreBtn.style.display = 'inline-block';
-    } else{
+
+        const First12imgs = $('.img-gallery-item').slice(0, 12);
+        for (let i = 0; i < First12imgs.length; i++) {
+            const everyOf12 = First12imgs[i];
+            console.log(everyOf12);
+            everyOf12.classList.remove('tab-hidden');
+        }
+    } else {
+        // $tabs2.css.display="none";
         LoadMoreBtn.style.display = 'none';
-    };
-    // ----------------
+    }
+    ;
+// ----------------
+
+
+// tabs
 
     $('.active').removeClass('active');
     const clickedLi = $(event.target);
     clickedLi.addClass("active");
 
     $tabs2.each((elemIndex, el) => {
-        $(el).addClass("tab-hidden");
-        if ($(el).data("category") === (clickedLi.data("category"))) $(el).removeClass('tab-hidden');
+        $(el).addClass('tab-hidden');
+        if ((clickedLi.data("category")) === 'all') {
+
+            const First12imgs = $('.img-gallery-item').slice(0, 12);
+            for (let i = 0; i < First12imgs.length; i++) {
+                const everyOf12 = First12imgs[i];
+                console.log(everyOf12);
+                everyOf12.classList.remove('tab-hidden');
+            }
+        } else if ($(el).data("category") === (clickedLi.data("category"))) {
+            $(el).removeClass('tab-hidden');
+        } else if ($(el).data("category") !== (clickedLi.data("category"))) {
+            $(el).addClass('tab-hidden');
+        }
     });
-// Имя текущей категории
-    let $categoryName = clickedLi.data("category");
+});
 
 // Див, появляющийся по ховеру
-    const $img = $('.img-gallery-item');
 
-    $img.on('mouseenter', hoverDivGeneration);
+const $img = $('.img-gallery-item');
+$img.on('mouseenter', hoverDivGeneration);
 
-    function hoverDivGeneration(event) {
-      const $hoverDiv = $('<div class="div-on-hover">' +
-            '<div>' +
-            ' <i class="div-on-hover-icons fas fa-link"></i>' +
-            '<i class="div-on-hover-icons fas fa-search"></i>' +
-            '</div>' +
-            '<p class="creative-design marine-text">creative design</p>' +
-            ' <p>' +$categoryName+ ' </p> ' +
-            '</div>');
-        $(event.target).css.position = "relative";
-        $(event.target).before($hoverDiv);
-    };
+function hoverDivGeneration(event) {
 
-    $img.on('mouseleave', () => {
-        $('.div-on-hover').remove();
-    });
+// Имя текущей категории
+    let $categoryName = $(this).data("category");
+// генерим дивак
+    const $hoverDiv = $('<div class="div-on-hover">' +
+        '<div>' +
+        ' <i class="div-on-hover-icons fas fa-link"></i>' +
+        '<i class="div-on-hover-icons fas fa-search"></i>' +
+        '</div>' +
+        '<p class="creative-design marine-text">creative design</p>' +
+        ' <p>' + $categoryName + ' </p> ' +
+        '</div>');
+    $(event.target).css.position = "relative";
+    $(event.target).before($hoverDiv);
+};
+
+$img.on('mouseleave', () => {
+    $('.div-on-hover').remove();
 });
+
 
 // load more button
-
-const LoadMoreBtn = document.querySelector('.load-more-btn');
+const LoadMoreBtn = document.querySelector('#load-more-gallery-btn');
 LoadMoreBtn.addEventListener('click', () => {
 
-    document.querySelector('.img-gallery').querySelectorAll('[data-cat="more"]').forEach((element) => {
-        element.classList.remove('tab-hidden');
-    })
+    const Second12imgs = $('.img-gallery-item').slice(12, 24);
+    for (let i = 0; i <= Second12imgs.length; i++) {
+        $(Second12imgs[i]).removeClass('tab-hidden');
+    }
+    LoadMoreBtn.style.display = 'none';
 
+});
+
+<!--__________________________What people say about theHam ___________________________________________________-->
+
+let galleryThumbs = new Swiper('.gallery-bottom', {
+    spaceBetween: 36,
+    slidesPerView: 4,
+    loop: true,
+    freeMode: true,
+    loopedSlides: 5, //looped slides should be the same
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+
+});
+let galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 36,
+    loop: true,
+    loopedSlides: 5,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: galleryThumbs,
+    },
 });
 
 
@@ -95,26 +140,3 @@ LoadMoreBtn.addEventListener('click', () => {
 
 
 
-
-
-// __________________________ Breaking News section____________________________________________________
-
-
-
-// const aForHover = document.querySelectorAll('.br-news-section>a');
-//
-// aForHover.addEventListener('mouseover', function(e){
-//     const partOnMouseover = e.target;
-//
-//     partOnMouseover.children[0].style.backgroundColor = '#18cfab';
-//     partOnMouseover.children[2].style.color = '#18cfab';
-//
-// });
-
-// function hovering(e) {
-//     const partOnMouseover = e.target;
-//
-//     partOnMouseover.children[0].style.backgroundColor = '#18cfab';
-//     partOnMouseover.children[2].style.color = '#18cfab';
-//
-// };

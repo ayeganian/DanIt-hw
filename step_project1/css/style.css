@@ -100,6 +100,7 @@ h2:nth-of-type(4n) {
     position: absolute;
     top: 45px;
     left: 197px;
+    line-height: 0.8em;
 }
 
 
@@ -369,10 +370,6 @@ h2:nth-of-type(4n) {
 
 }
 
-/*.tab-hidden {*/
-/*    display: none;*/
-/*}*/
-
 .tabs2-title.active {
     color: #18cfab;
     border-top: 2px solid #18cfab;
@@ -390,11 +387,8 @@ h2:nth-of-type(4n) {
 
 .div-on-hover {
 
-    /*????*/
     width: 285px;
     height: 207px;
-    /*????*/
-
     font-size: 19px;
     color: #afb0b1;
     background-color: #fff;
@@ -541,12 +535,117 @@ h2:nth-of-type(4n) {
     height: 851px;
     background: url("../img/Sections background/section-3.jpg") center no-repeat;
     background-size: cover;
+    position: relative;
 }
-
-
-.photo-section-3-text::before {
+.photo-section-3-items::before {
     content: url("../img/quotes.png");
+    position: absolute;
+    top: 227px;
+    left: 50%;
 }
+
+/*каруселька*/
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+    font-size: 16px;
+    color: #8c8c89;
+}
+.gallery-top {
+    height: 345px;
+    width: 1097px;
+    text-align: center;
+}
+.gallery-bottom {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 61px;
+    width: 400px;
+}
+.gallery-bottom .swiper-slide {
+    height: 60px;
+    width: 58px !important;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(26, 206, 171, .2);
+}
+.gallery-bottom .swiper-slide-thumb-active {
+    border: 2px solid #18cfab;
+    position: relative;
+    bottom: 10px;
+}
+.swiper-button-next {
+    top: 752px;
+    right: 522px;
+    border: 1px solid #969a9c;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px 11px;
+}
+.swiper-button-prev {
+    top: 752px;
+    left: 522px;
+
+    border: 1px solid #969a9c;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px 11px;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next{
+    background-image: none !important;
+}
+
+.arrow {
+    color: #969a9c;
+}
+
+.swiper-header-name {
+    text-transform: uppercase;
+    color: #18cfab;
+    font-weight: 700;
+    margin: 43px 0 15px;
+}
+
+.swiper-position {
+    margin-bottom: 38px;
+}
+
+.swiper-image {
+    border-radius: 50%;
+    border: 2px solid #18cfab;
+    box-shadow: 0 0 0 10px rgba(26, 206, 171, .2);
+    width: 152px;
+    height: 152px;
+}
+
+.swiper-button-white:hover {
+    background-color: #18cfab;
+    border: 1px solid #18cfab;
+    /*color: white;*/
+}
+.swiper-button-white:hover .arrow{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*________________________ Footer________________________________________________________________*/
