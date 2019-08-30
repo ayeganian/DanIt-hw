@@ -40,10 +40,8 @@ $('.tabs2-title').click((event) => {
             everyOf12.classList.remove('tab-hidden');
         }
     } else {
-        // $tabs2.css.display="none";
         LoadMoreBtn.style.display = 'none';
-    }
-    ;
+    };
 // ----------------
 
 
@@ -99,8 +97,8 @@ $img.on('mouseleave', () => {
 
 
 // load more button
-const LoadMoreBtn = document.querySelector('#load-more-gallery-btn');
-LoadMoreBtn.addEventListener('click', () => {
+
+$('#load-more-gallery-btn').on('click', () => {
 
     const Second12imgs = $('.img-gallery-item').slice(12, 24);
     for (let i = 0; i <= Second12imgs.length; i++) {
