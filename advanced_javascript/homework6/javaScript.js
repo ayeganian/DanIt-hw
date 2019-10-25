@@ -40,26 +40,19 @@ $.ajax({
                 return newArr[i].starships
             }).then(function (ship) {
                 if (ship.length !== 0) {
-                    const starshipsBtn = $('<button class="starships-list-btn">Список кораблей</button>');
+                    let starshipsBtn = $('<button class="starships-list-btn">Список кораблей</button>');
                     heroesWrapper.append(starshipsBtn);
                     starshipsBtn.click(function (e) {
                         const btn = e.target;
                         getStarshipsList(btn);
-
                     }) //click
-
                 } // if
-            }) //then(function (ship)
-// // ////////////////////////////
-
-
+            })
             function getStarshipsList(clickedBtn) {
                 let starshipsUrlArray = newArr[i].starships;
                 starshipsUrlArray.forEach(function (element) {
                     function starshipsGetting() {
                         return promise2 = new Promise(function (resolve, reject) {
-
-                            // starshipsUrlArray.forEach(function (element) {
                             let starshipsUrl = element;
 
                             $.ajax({
@@ -69,27 +62,20 @@ $.ajax({
                                     reject(data);
                                 },
                                 success: function (data) {
-
-                                     $(clickedBtn).replaceWith("<h3 class='starships-title'>Пилотируемые корабли</h3>");
-
+                                    $(clickedBtn).replaceWith(`<h3 class='starships-title' id='ships-${i}'>Пилотируемые корабли</h3>`);
+                                    // p.push(data.name);
                                     resolve(data.name)
                                 }
                             })
-                          // }); //forEach
+                            // }); //forEach
                         }) //promise
                     }
-
                     starshipsGetting().then(function (StarshipsListResult) {
-
-                        $('starships-names').remove();
-                        const p = $(`<br><small class="starships-names"> ${StarshipsListResult}</small>`);
-                        $('h3').append(p);
-
-
+                        const p = $(`<br><small class="starships-names"> ${StarshipsListResult}</small>`)
+                        $('#ships-'+i).append(p);
                     })
                 })
             }
-            ////////////////////
         } //for
     },  //success
     error: function (data) {
