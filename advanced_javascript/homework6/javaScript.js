@@ -69,8 +69,9 @@ $.ajax({
                                     reject(data);
                                 },
                                 success: function (data) {
-                                    $(clickedBtn).replaceWith("<h3 class='starships-title'>Пилотируемые корабли</h3>");
-                                    // p.push(data.name);
+
+                                     $(clickedBtn).replaceWith("<h3 class='starships-title'>Пилотируемые корабли</h3>");
+
                                     resolve(data.name)
                                 }
                             })
@@ -79,10 +80,12 @@ $.ajax({
                     }
 
                     starshipsGetting().then(function (StarshipsListResult) {
-                        console.log(StarshipsListResult);
+
                         $('starships-names').remove();
-                        const p = $(`<br><small class="starships-names"> ${StarshipsListResult}</small>`)
+                        const p = $(`<br><small class="starships-names"> ${StarshipsListResult}</small>`);
                         $('h3').append(p);
+
+
                     })
                 })
             }

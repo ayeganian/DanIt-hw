@@ -11,7 +11,6 @@
 //     Необязательное задание продвинутой сложности
 // Пока загружаются персонажи фильма, прокручивать над кнопкой Список персонажей анимацию загрузки. Анимацию можно использовать любую. Желательно айти вариант на чистом CSS без использования JavaScript.
 //
-
 const request = new XMLHttpRequest();
 request.open('GET', 'https://swapi.co/api/films/');
 request.responseType = 'json';
@@ -34,40 +33,27 @@ request.onload = function () {
             const charactersListWrapper = document.createElement('ul');
 
             filmsListbutton.addEventListener('click', function () {
+                let charactersUrlArray = newArr[i].characters;
+                charactersUrlArray.forEach(function (el) {
 
-                function charactersGetting() {
-
-                    return new Promise(function (resolve, reject) {
-                        let charactersUrlArray = newArr[i].characters;
-                        charactersUrlArray.forEach(function (el) {
-
-                            let charactersUrl = el;
-                            const request = new XMLHttpRequest();
-                            request.open('GET', charactersUrl);
-                            request.send();
-                            request.onload = function () {
-                                if (request.status !== 200) {
-                                    reject(`Error ${request.status} : ${request.statusText} `);
-                                } else {
-                                    const charactersResponse = JSON.parse(request.response);
-                                    const charactersList = document.createElement('li');
-                                    charactersList.innerHTML = `<p class="characters-list">${charactersResponse.name};</p>`;
-                                    charactersListWrapper.append(charactersList);
-                                    filmsListbutton.after(charactersListWrapper);
-                                    filmsListbutton.remove();
-                                    resolve(charactersResponse.name);
-
-                                }
-                            }
-                        });
-                    });
-
-                }
-
-                charactersGetting().then(function () {
-
+                    let charactersUrl = el;
+                    console.log(charactersUrl);
+                    const request = new XMLHttpRequest();
+                    request.open('GET', charactersUrl);
+                    request.send();
+                    request.onload = function () {
+                        if (request.status !== 200) {
+                            reject(`Error ${request.status} : ${request.statusText} `);
+                        } else {
+                            const charactersResponse = JSON.parse(request.response);
+                            const charactersList = document.createElement('li');
+                            charactersList.innerHTML = `<p class="characters-list">${charactersResponse.name};</p>`;
+                            charactersListWrapper.append(charactersList);
+                            filmsListbutton.after(charactersListWrapper);
+                            filmsListbutton.remove();
+                        }
                     }
-                );
+                });
             })
         }
     }
